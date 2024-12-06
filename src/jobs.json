@@ -83,62 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "6b8e",
-      "type": "Part-Time",
-      "title": "Accusantium sint qu",
-      "location": "Non est modi quo et",
-      "description": "Sed est minus eligen",
-      "salary": "$175K - 200K",
-      "company": {
-        "name": "Bolton Vang Plc",
-        "description": "Quia qui quasi id ip",
-        "contactEmail": "gojozuhota@mailinator.com",
-        "contactPhone": "+1 (484) 978-9405"
-      }
-    },
-    {
-      "id": "8dae",
-      "type": "Internship",
-      "title": "Nihil lorem cupidata",
-      "location": "Sunt tempor pariatu",
-      "description": "Ratione dolorem cons",
-      "salary": "$125K - 150K",
-      "company": {
-        "name": "Bond and Potter Co",
-        "description": "",
-        "contactEmail": "gofizosoca@mailinator.com",
-        "contactPhone": "+1 (922) 232-6104"
-      }
-    },
-    {
-      "id": "38c2",
-      "type": "Part-Time",
-      "title": "Dignissimos in in et",
-      "location": "Accusamus quo ea est",
-      "description": "Fugiat laboriosam m",
-      "salary": "$100K - 125K",
-      "company": {
-        "name": "Rhodes Aguirre LLC",
-        "description": "",
-        "contactEmail": "pufigy@mailinator.com",
-        "contactPhone": "+1 (539) 799-2634"
-      }
-    },
-    {
-      "id": "0388",
-      "type": "Part-Time",
-      "title": "Sint amet enim volu",
-      "location": "Consequatur fuga E",
-      "description": "",
-      "salary": "Under $50K",
-      "company": {
-        "name": "Hickman and Boyle LLC",
-        "description": "Doloremque qui conse",
-        "contactEmail": "qyqakify@mailinator.com",
-        "contactPhone": "+1 (628) 548-1065"
-      }
     }
   ]
 }
