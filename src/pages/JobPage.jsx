@@ -1,6 +1,7 @@
 import { useParams, useLoaderData, Link, useNavigate } from "react-router-dom";
 import { FaArrowCircleLeft, FaMapMarker } from "react-icons/fa";
 import { toast } from "react-toastify";
+import swal from "sweetalert";
 
 const JobPage = ({ deleteJob }) => {
   const { id } = useParams();
@@ -8,12 +9,34 @@ const JobPage = ({ deleteJob }) => {
   const navigate = useNavigate();
 
   const onDeleteClick = (jobId) => {
-    const confirm = window.confirm("Are you sure you want to delete this job?");
-    if (!confirm) return;
+    swal({
+      title: "Are you sure?",
+      text: "Once deleted, you will not be able to recover this imaginary file!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        swal("Poof! Your imaginary file has been deleted!", {
+          icon: "success",
+        });
+        deleteJob(jobId);
+        toast.success("Job deleted successfully!");
+        navigate("/jobs");
+      } else {
+        swal("Your imaginary file is safe!");
+        return;
+      }
+    });
+    // const confirm = window.confirm("Are you sure you want to delete this job?");
+    // if (!confirm) {
+    //   return;
+    // }
 
-    deleteJob(jobId);
-    toast.success("Job deleted successfully");
-    navigate("/jobs");
+    // deleteJob(jobId);
+    // toast.success("Job deleted successfully!");
+    //toast.success("WELL DONNE MAN!");
+    // navigate("/jobs");
   };
 
   //   const [job, setJob] = useState(null);
